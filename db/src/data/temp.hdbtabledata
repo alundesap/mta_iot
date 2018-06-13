@@ -1,0 +1,23 @@
+{
+	"format_version": 1,
+	"imports":
+	[
+        {
+            "target_table": "mta_iot.db.data::sensors.temp",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "mta_iot.db.data::temp.csv",
+                "has_header": true
+            },
+            "import_settings": {
+                "import_columns": [
+                    "tempId",
+					"tempVal",
+					"ts",
+					"created"
+                ],
+                "include_filter": []
+            }
+        }
+	]
+}

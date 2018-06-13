@@ -1,0 +1,5 @@
+service {
+	"mta_iot.db.data::sensors.temp" as "temp" 
+		create using "inc:tempCreate.xsjslib::tempCreate"
+	;
+}
